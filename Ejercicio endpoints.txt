@@ -1,0 +1,11 @@
+ENDPOINTS RESTFUL
+
+TABLAS:
+
+VEHICULO (id, marca, modelo, año)
+SERVICE (id, id_vehiculo, id_mecanico, fecha, kilometraje)
+
+Listar los services de un vehiculo ordenados por fecha: Verbo: GET URL: /api/services/:id_vehiculo?sort=fecha&order=asc
+Eliminar un vehiculo: DELETE /api/vehiculos/:ID
+Listar todos los vehiculos sin services este año: GET /api/services?pending=true
+Actualizar datos de un vehiculo: PUT /api/vehiculos/:ID
